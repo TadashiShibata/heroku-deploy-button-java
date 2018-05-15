@@ -11,6 +11,9 @@
 	</head>
 	<body>
 		Hello world !! Hello JSP !!!!
+		<label>
+  			–¼‘O: <input type="text" name="NAME">
+		</label>
 		<a href="./MainMenuh>START</a><br>
 		<input type="submit" name="processType" value="START" onClick="return menu()"/><br>
 		<button onclick="window.href='./MainMenuh >START</button><br>
