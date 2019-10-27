@@ -59,7 +59,7 @@
         <button type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
     </div>
 		<audio>
-  		<source src="" type="audio/wav">
+  		<source id = "wav" src="" type="audio/wav">
 		</audio>
 </body>
 
@@ -97,10 +97,10 @@
                     input.value = decodeInformation;
 										if(input.value === 'A08030329_92515'){				
 											qrqr.value = '正しいQRコードです!';
-											src = '/media/se_maoudamashii_chime13.wav';
+											wav.src = '/media/se_maoudamashii_chime13.wav';
 										}else{
 											qrqr.value = '誤ったQRコードです!';
-											src = '/media/se_maoudamashii_voice_human04.wav.wav';
+											wav.src = '/media/se_maoudamashii_voice_human04.wav.wav';
 										}
                 }
             });
