@@ -92,10 +92,16 @@
                 var input = document.getElementById('qr');
                 if (!(decodeInformation instanceof Error)) {
                     input.value = decodeInformation;
-										if(input.value === 'A08030329_92515'){
+										if(input.value === 'A08030329_92515'){				
 											qrqr.value = '正しいQRコードです!';
+											<audio controls>
+  											<source src="/media/se_maoudamashii_chime13.wav" type="audio/wav">
+											</audio>
 										}else{
 											qrqr.value = '誤ったQRコードです!';
+											<audio controls>
+  											<source src="/media/se_maoudamashii_voice_human04.wav" type="audio/wav">
+											</audio>
 										}
                 }
             });
