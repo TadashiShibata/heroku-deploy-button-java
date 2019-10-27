@@ -52,6 +52,7 @@
     <div style="margin-top: 3em">
         <label for="qr">読み取ったQRコード<br></label>
         <input type="text" id="qr" value="" style="width:100%">
+				
     </div>
     <div style="margin-top: 3em">
         <button type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
@@ -106,6 +107,11 @@
                 } else {
                     var qr = document.getElementById('qr');
                     qr.value = res;
+										if(qr.value === 'A08030329_92515'){
+											alert('正しいQRコードです。');
+										}else{
+											alert('誤ったQRコードです。');
+										}
                 }
             };
 
