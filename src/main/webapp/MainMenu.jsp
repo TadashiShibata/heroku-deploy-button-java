@@ -51,7 +51,7 @@
 
     <div style="margin-top: 3em">
         <label for="qr">読み取ったQRコード<br></label>
-        <input type="text" id="qr" value="" style="width:100%">
+        <input type="text" id="qr"   value="" style="width:100%">
 				<input type="text" id="qrqr" value="" style="width:100%">
     </div>
     <div style="margin-top: 3em">
@@ -92,6 +92,11 @@
                 var input = document.getElementById('qr');
                 if (!(decodeInformation instanceof Error)) {
                     input.value = decodeInformation;
+										if(input.value === 'A08030329_92515'){
+											qrqr.value = '正しいQRコードです!';
+										}else{
+											qrqr.value = '誤ったQRコードです!';
+										}
                 }
             });
         }
