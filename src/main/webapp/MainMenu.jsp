@@ -58,7 +58,7 @@
         <button type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
         <button type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
     </div>
-		<audio controls>
+		<audio>
   		<source src="" type="audio/wav">
 		</audio>
 </body>
