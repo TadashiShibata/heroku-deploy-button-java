@@ -5,7 +5,7 @@
     <title>QR_code verification</title>
 		<script type="text/javascript">
 				function menu(){
-		        location.href = "./MainMenu.jsp";
+		        location.href = "./MainMenu.html";
 		    }
 		</script>
 	</head>
