@@ -2,6 +2,9 @@
 <html lang = "ja">
 	<head>
     <meta charset=UTF-8">
+    <meta name="viewport"
+        content="width=device-width, intial-scale=1, mininum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<style>
 			@media screen and (mini-width:480px){
 				#content{margin-right:200px;}
