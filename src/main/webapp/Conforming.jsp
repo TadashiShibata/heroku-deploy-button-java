@@ -12,9 +12,9 @@
 		<style>
 				.note {
 						background-color: lime;
-  					color: white;
-    				width: 5000px;
-    				height:5000px;
+  					color: Black;
+    				width: 500px;
+    				height:500px;
 				}
         .qrbtn {
             background-color: red;
