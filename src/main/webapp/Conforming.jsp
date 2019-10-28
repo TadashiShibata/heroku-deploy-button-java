@@ -9,12 +9,30 @@
 		        location.href = "./MainMenu.jsp";
 		    }
 		</script>
+		<style>
+				.note {
+						background-color: lime;
+  					color: white;
+    				width: 500px;
+    				height:500px;
+				}
+        .qrbtn {
+            background-color: red;
+            color: #fff;
+            margin: 3em auto;
+            width: 100%;
+            height: 2em;
+            padding: 20px;
+            border-radius: 9px;
+        }
+
+    </style>
 	</head>
 	<body>
 		<<  QR_code verification >>
 		<br><br>
 		<div style="font-size:xx-large"　color: white; background: lime>OK</div>
-		<div style="font-size:large"　color: black; background: white>結果：[success]</div>
+		<div style="font-size:large"　color: black; background: white>[success]</div>
 		<a href="./MainMenu”>START</a><br>
 		<input type="submit" name="processType" value="START" onClick="return menu()"/><br>
 		<button>START</button><br>
