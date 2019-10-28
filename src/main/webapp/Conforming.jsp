@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
     <title>QR_code verification</title>
 		<script type="text/javascript">
 				function menu(){
@@ -12,8 +13,8 @@
 	<body>
 		<<  QR_code verification >>
 		<br><br>
-		<div style="font-size:xx-large"　color: white; background: lime>◎</div>
-		<div style="font-size:large"　color: black; background: white>[結果：success]</div>
+		<div style="font-size:xx-large"　color: white; background: lime>OK</div>
+		<div style="font-size:large"　color: black; background: white>結果：[success]</div>
 		<a href="./MainMenu”>START</a><br>
 		<input type="submit" name="processType" value="START" onClick="return menu()"/><br>
 		<button>START</button><br>
