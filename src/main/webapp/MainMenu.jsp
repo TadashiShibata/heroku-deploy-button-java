@@ -19,11 +19,6 @@
         }
 
     </style>
-		<script type="text/javascript">
-				function menu(){
-		        location.href = "./Conforming.jsp";
-		    }
-		</script>
 </head>
 
 <body>
@@ -63,7 +58,6 @@
         <button type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
         <button type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
     </div>
-		<input type="submit" name="processType" value="START" onClick="return menu()"/>
 		<audio autoplay id = "audio">
   		<source  src="" type="audio/wav">
 		</audio>
@@ -106,7 +100,7 @@
 										if(input.value === 'A08030329_92515'){				
 											qrqr.value = '正しいQRコードです!';
 											audio.src = '/media/se_maoudamashii_chime13.wav';
-
+											location.href = 'https://protected-cove-81704.herokuapp.com/Conforming.jsp';
 										}else{
 											qrqr.value = '誤ったQRコードです!';
 											audio.src = '/media/se_maoudamashii_voice_human04.wav.wav';
@@ -129,7 +123,7 @@
 										if(qr.value === 'A08030329_92515'){
 											qrqr.value = '正しいQRコードです!';
 											audio.src = '/media/se_maoudamashii_chime13.wav';
-											location.href = 'https://protected-cove-81704.herokuapp.com/index.jsp';
+											location.href = 'https://protected-cove-81704.herokuapp.com/Conforming.jsp';
 										}else{
 											qrqr.value = '誤ったQRコードです!';
 											audio.src = '/media/se_maoudamashii_voice_human04.wav.wav';
