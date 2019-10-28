@@ -58,9 +58,11 @@
         <button type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
         <button type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
     </div>
-		<audio>
-  		<source id = "wav" src="" type="audio/wav">
+		<audio autoplay id = "audio">
+  		<source  src="" type="audio/wav">
 		</audio>
+		<iframe src="https://raw.githubusercontent.com/anars/blank-audio/master/500-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none">
+		</iframe>
 </body>
 
 <script src="./js/qr/qr_packed.js" charset="UTF-8"></script>
@@ -97,10 +99,10 @@
                     input.value = decodeInformation;
 										if(input.value === 'A08030329_92515'){				
 											qrqr.value = '正しいQRコードです!';
-											wav.src = '/media/se_maoudamashii_chime13.wav';
+											audio.src = '/media/se_maoudamashii_chime13.wav';
 										}else{
 											qrqr.value = '誤ったQRコードです!';
-											wav.src = '/media/se_maoudamashii_voice_human04.wav.wav';
+											audio.src = '/media/se_maoudamashii_voice_human04.wav.wav';
 										}
                 }
             });
@@ -119,8 +121,10 @@
                     qr.value = res;
 										if(qr.value === 'A08030329_92515'){
 											qrqr.value = '正しいQRコードです!';
+											audio.src = '/media/se_maoudamashii_chime13.wav';
 										}else{
 											qrqr.value = '誤ったQRコードです!';
+											audio.src = '/media/se_maoudamashii_voice_human04.wav.wav';
 										}
                 }
             };
