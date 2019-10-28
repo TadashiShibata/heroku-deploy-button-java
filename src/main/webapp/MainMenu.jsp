@@ -222,7 +222,7 @@
             }
 
             var p = document.getElementById('active-camera');
-            p.innerHTML = iosRear === 'environment' ? '前面カメラ' : '背面カメラ';
+            p.outerHTML = iosRear === 'environment' ? '背面カメラ' : '前面カメラ';
             setCamera();
         };
 
