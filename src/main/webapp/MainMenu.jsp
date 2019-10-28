@@ -222,7 +222,7 @@
             }
 
             var p = document.getElementById('active-camera');
-            p.outerHTML = iosRear === 'environment' ? '背面カメラ' : '前面カメラ';
+            p.innerHTML = iosRear === 'user' ? '前面カメラ' : '背面カメラ';
             setCamera();
         };
 
@@ -268,7 +268,7 @@
             modeChange('video');
         });
 
-        document.getElementById('changeCamera').addEventListener('click', function () {
+        document.getElementById('changeCamera').addEventListener('true', function () {
             if (iosRear === 'environment') {
                 iosRear = 'user';
             } else {
