@@ -59,7 +59,7 @@
         <button type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
     </div>
 		<audio autoplay id = "audio">
-  		<source  src="" type="audio/wav">
+  		<source  src="/media/se_maoudamashii_chime13.wav" type="audio/wav">
 		</audio>
 		<iframe src="https://raw.githubusercontent.com/anars/blank-audio/master/500-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none">
 		</iframe>
