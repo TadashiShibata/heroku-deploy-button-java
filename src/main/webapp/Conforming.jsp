@@ -13,8 +13,8 @@
 				.note {
 						background-color: lime;
   					color: Black;
-    				width: 500px;
-    				height:500px;
+    				width: 100px;
+    				height:100px;
 				}
         .qrbtn {
             background-color: red;
@@ -31,7 +31,7 @@
 	<body>
 		<<  QR_code verification >>
 		<br><br>
-		<div class="note" style="font-size:xx-large"@color: white; background: lime>OK</div>
+		<div class="note" style="font-size: 1000px;"@color: white; background: lime>OK</div>
 		<div style="font-size:large"@color: black; background: white>[success]</div>
 		<a href="./MainMenuh>START</a><br>
 		<input type="submit" name="processType" value="START" onClick="return menu()"/><br>
