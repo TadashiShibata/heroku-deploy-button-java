@@ -87,11 +87,11 @@
             var w;
 
             w = video.videoWidth;
-            h = video.videoHeight;
+            h = video.videoHeight / 2;
 
             canvas.setAttribute('width', w);
-            canvas.setAttribute('height', h/2);
-            ctx.drawImage(video, 0, 0, w, h/2);
+            canvas.setAttribute('height', h);
+            ctx.drawImage(video, 0, 0, w, h);
 
             decodeImageFromBase64(canvas.toDataURL('image/png'), function (decodeInformation) {
                 var input = document.getElementById('qr');
@@ -222,7 +222,7 @@
             }
 
             var p = document.getElementById('active-camera');
-            p.innerHTML = iosRear === 'user' ? '前面カメラ' : '背面カメラ';
+            p.innerHTML = iosRear === 'environment' ? '前面カメラ' : '背面カメラ';
             setCamera();
         };
 
