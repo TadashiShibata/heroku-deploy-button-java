@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang = "ja">
+<html lang="ja">
 	<head>
-    <meta charset=UTF-8">
+    <meta charset="utf-8" />
     <meta name="viewport"
         content="width=device-width, intial-scale=1, mininum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,8 +17,9 @@
 		    }
 		</script>
 	</head>
+
 	<body>
-		<< ＱＲコード照合デモ  >>
+    <h1>QRコード読み取りデモ</h1>
 		<br><br>
 		<p>Read the bar code <br>
 		<input type="text" name="example2" size="30" maxlength="30" value="BCD"></p>
