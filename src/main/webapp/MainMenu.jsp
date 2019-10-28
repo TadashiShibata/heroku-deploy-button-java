@@ -90,8 +90,8 @@
             h = video.videoHeight;
 
             canvas.setAttribute('width', w);
-            canvas.setAttribute('height', h);
-            ctx.drawImage(video, 0, 0, w, h);
+            canvas.setAttribute('height', h/2);
+            ctx.drawImage(video, 0, 0, w, h/2);
 
             decodeImageFromBase64(canvas.toDataURL('image/png'), function (decodeInformation) {
                 var input = document.getElementById('qr');
@@ -269,10 +269,10 @@
         });
 
         document.getElementById('changeCamera').addEventListener('click', function () {
-            if (iosRear === 'user') {
-                iosRear = 'environment';
-            } else {
+            if (iosRear === 'environment') {
                 iosRear = 'user';
+            } else {
+                iosRear = 'environment';
             }
 
             changeCamera();

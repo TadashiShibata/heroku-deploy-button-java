@@ -28,7 +28,7 @@
 	</head>
 
 	<body>
-    <h1>QRコード読み取りデモ</h1>
+    <h1>QR_code verification</h1>
 		<br><br>
 		<p>Read the bar code <br>
 		<input type="text" name="example2" size="30" maxlength="30" value="BCD"></p>
