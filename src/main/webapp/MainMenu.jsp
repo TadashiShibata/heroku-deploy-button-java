@@ -98,6 +98,7 @@
 											location.href = 'https://protected-cove-81704.herokuapp.com/Conforming.jsp';
 										}else{
 											qrqr.value = '誤ったQRコードです !';
+											location.href = 'https://protected-cove-81704.herokuapp.com/Discrepancy.jsp';
 										}
                 }
             });
@@ -119,6 +120,7 @@
 											location.href = 'https://protected-cove-81704.herokuapp.com/Conforming.jsp';
 										}else{
 											qrqr.value = '誤ったQRコードです !';
+											location.href = 'https://protected-cove-81704.herokuapp.com/Discrepancy.jsp';
 										}
                 }
             };
