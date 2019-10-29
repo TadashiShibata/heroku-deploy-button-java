@@ -30,7 +30,7 @@
 	<body>
 		<<  QR_code verification >>
 		<br><br>
-		<div style="font-size:100px;font-color:lime">OK</div>
+		<div style="font-size:100px; color:lime">OK</div>
 		<div style="font-size:x-large"@color: black; background: white>[success]</div>
 		<a href="./MainMenuh>START</a><br>
 		<input type="submit" name="processType" value="START" onClick="return menu()"/><br>
@@ -42,4 +42,10 @@
 		<iframe src="https://raw.githubusercontent.com/anars/blank-audio/master/500-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none">
 		</iframe>
 	</body>
+	<script src="./js/qr/qr_packed.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+		function menu(){
+		   location.href = "./MainMenu.jsp";
+		}
+	</script>
 </html>
