@@ -3,19 +3,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>QR_code verification</title>
-		<script type="text/javascript">
-				function menu(){
-		        location.href = "./MainMenu.jsp";
-		    }
-		</script>
-		<style>
-				.note {
-						background-color: lime;
-  					color: Black;
-    				width: 600px;
-    				height:600px;
-				}
+    <meta name="viewport"
+        content="width=device-width, intial-scale=1, mininum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <style>
         .qrbtn {
             background-color: red;
             color: #fff;
@@ -27,15 +19,23 @@
         }
 
     </style>
+		<style>
+			@media screen and (mini-width:480px){
+				#content{margin-right:200px;}
+			}
+		</style>
+    <title>QR_code verification</title>
 	</head>
+
 	<body>
 		<<  QR_code verification >>
 		<br><br>
-		<div class="note" style="font-size: 300px;"@color: white; background: lime>OK</div>
+		<div style="font-size: 300px;"@color: white; background: lime>OK</div>
 		<div style="font-size:large"@color: black; background: white>[success]</div>
 		<a href="./MainMenuh>START</a><br>
 		<input type="submit" name="processType" value="START" onClick="return menu()"/><br>
-		<button>START</button><br>
+		<div aligin = center><button style="font-size:xx-large">START</button></div>
+
 		<audio autoplay id = "audio">
   		<source  src="/media/se_maoudamashii_chime13.wav" type="audio/wav">
 		</audio>
