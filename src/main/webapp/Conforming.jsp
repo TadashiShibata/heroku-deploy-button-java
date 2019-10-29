@@ -30,8 +30,8 @@
 	<body>
 		<<  QR_code verification >>
 		<br><br>
-		<div style="font-size: 300px;"@color: white; background: lime>OK</div>
-		<div style="font-size:large"@color: black; background: white>[success]</div>
+		<div style="font-size:100px;font-color:lime">OK</div>
+		<div style="font-size:x-large"@color: black; background: white>[success]</div>
 		<a href="./MainMenuh>START</a><br>
 		<input type="submit" name="processType" value="START" onClick="return menu()"/><br>
 		<div aligin = center><button style="font-size:xx-large">START</button></div>
