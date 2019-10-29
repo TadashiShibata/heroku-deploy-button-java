@@ -56,8 +56,8 @@
 				<input type="text" id="qrqr" value="" style="width:100%">
     </div>
     <div style="margin-top: 3em">
-        <button type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
-        <button type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
+        <button style="font-size:large" type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
+        <button style="font-size:large" type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
     </div>
 </body>
 
