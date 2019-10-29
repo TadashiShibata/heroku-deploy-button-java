@@ -1,3 +1,4 @@
+<%@ page contentType="text/html" import="java.util.*,java.io.*" %>
 <!doctype html>
 <html lang="ja">
 
@@ -273,5 +274,4 @@
         }, false);
     };
 </script>
-
 </html>
