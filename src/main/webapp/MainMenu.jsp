@@ -140,13 +140,13 @@
     window.onload = function () {
         var modeChange = function (mode) {
             if (mode === 'camera') {
-                document.getElementById('video-input').style.display = 'none';
-                document.getElementById('photo-input').style.display = 'block';
+                document.getElementById('video-input').style.display = 'block';
+                document.getElementById('photo-input').style.display = 'none';
                 document.getElementById('toCamera').style.display = 'none';
                 document.getElementById('toMovie').style.display = 'block';
             } else {
-                document.getElementById('video-input').style.display = 'block';
-                document.getElementById('photo-input').style.display = 'none';
+                document.getElementById('video-input').style.display = 'none';
+                document.getElementById('photo-input').style.display = 'block';
                 document.getElementById('toCamera').style.display = 'block';
                 document.getElementById('toMovie').style.display = 'none';
             }
@@ -268,7 +268,7 @@
             modeChange('video');
         });
 
-        document.getElementById('changeCamera').addEventListener('true', function () {
+        document.getElementById('changeCamera').addEventListener('click', function () {
             if (iosRear === 'environment') {
                 iosRear = 'user';
             } else {
