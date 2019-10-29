@@ -142,13 +142,13 @@
             if (mode === 'camera') {
                 document.getElementById('video-input').style.display = 'block';
                 document.getElementById('photo-input').style.display = 'none';
-                document.getElementById('toCamera').style.display = 'none';
-                document.getElementById('toMovie').style.display = 'block';
+                document.getElementById('toCamera').style.display = 'block';
+                document.getElementById('toMovie').style.display = 'none';
             } else {
                 document.getElementById('video-input').style.display = 'none';
                 document.getElementById('photo-input').style.display = 'block';
-                document.getElementById('toCamera').style.display = 'block';
-                document.getElementById('toMovie').style.display = 'none';
+                document.getElementById('toCamera').style.display = 'none';
+                document.getElementById('toMovie').style.display = 'block';
             }
         };
 
