@@ -7,7 +7,7 @@
 <body>
 <h1>Hello World!</h1>
 
-<%@ include file="../dummy.txt" %>
+<%@ include file="c:\\temp\\dummy.txt" %>
 
 </body>
 </html>
