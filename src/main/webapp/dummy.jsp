@@ -1,17 +1,13 @@
-<%@ page contentType="text/html;charset=utf-8" import="java.io.*"  %>
-<!doctype html>
-<html lang="ja">
+<%@ page contentType="text/html;charset=Shift_JIS" %>
 
+<html>
 <head>
-	<title>Hello World!</title>
+<title>Hello World!</title>
 </head>
 <body>
-<h1>Hello Dummy!</h1>
-<%
-	BufferedReader bufFileData = new BufferedReader(new FileReader("c:\\dummy.txt"));
-	while(bufFileData.ready()){out.println(bufFileData.readLine() + "");
-	}
-	bufFileData.close();
-%>
+<h1>Hello World!</h1>
+
+<%@ include file="../dummy.txt" %>
+
 </body>
 </html>
