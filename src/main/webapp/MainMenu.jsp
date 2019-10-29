@@ -29,7 +29,7 @@
 
     <div id="video-input">
         <div style="text-align: center">
-            <video id="video" style="width: 80%; height: auto;" autoplay playsinline></video>
+            <video id="video" style="width: 80%; height: 50%;" autoplay playsinline></video>
         </div>
         <img id="img" />
         <div style="display: none">
@@ -59,11 +59,6 @@
         <button type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
         <button type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
     </div>
-		<audio autoplay id = "audio">
-  		<source  src="" type="audio/wav">
-		</audio>
-		<iframe src="https://raw.githubusercontent.com/anars/blank-audio/master/500-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none">
-		</iframe>
 </body>
 
 <script src="./js/qr/qr_packed.js" charset="UTF-8"></script>
@@ -88,7 +83,7 @@
             var w;
 
             w = video.videoWidth;
-            h = video.videoHeight / 2;
+            h = video.videoHeight;
 
             canvas.setAttribute('width', w);
             canvas.setAttribute('height', h);
@@ -145,7 +140,6 @@
                 document.getElementById('photo-input').style.display = 'block';
                 document.getElementById('toCamera').style.display = 'none';
                 document.getElementById('toMovie').style.display = 'block';
-
             } else {
                 document.getElementById('video-input').style.display = 'block';
                 document.getElementById('photo-input').style.display = 'none';
