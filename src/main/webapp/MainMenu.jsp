@@ -24,8 +24,9 @@
 <body>
     <h1>QRコード読み取りデモ</h1>
     <div>
-        <button style="font-size:xx-large" type="button" id="changeCamera">前面／背面 切り替え</button>
+        <button style="font-size:x-large" type="button" id="changeCamera">前面／背面 切り替え</button>
     </div>
+
     <div id="video-input">
         <div style="text-align: center">
             <video id="video" style="width: 80%; height: auto;" autoplay playsinline></video>
@@ -55,8 +56,8 @@
 				<input type="text" id="qrqr" value="" style="width:100%">
     </div>
     <div style="margin-top: 3em">
-        <button style="font-size:xx-large" type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
-        <button style="font-size:xx-large" type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
+        <button type="button" id="toCamera">通常カメラでの読み取りに切り替え</button>
+        <button type="button" id="toMovie" style="display: none">ビデオカメラでの読み取りに切り替え</button>
     </div>
 		<audio autoplay id = "audio">
   		<source  src="" type="audio/wav">
