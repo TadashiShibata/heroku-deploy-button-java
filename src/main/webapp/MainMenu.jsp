@@ -94,12 +94,10 @@
                 if (!(decodeInformation instanceof Error)) {
                     input.value = decodeInformation;
 										if(input.value === 'A08030329_92515'){				
-											qrqr.value = '正しいQRコードです!';
-											audio.src = '/media/se_maoudamashii_chime13.wav';
+											qrqr.value = '正しいQRコードです !';
 											location.href = 'https://protected-cove-81704.herokuapp.com/Conforming.jsp';
 										}else{
-											qrqr.value = '誤ったQRコードです!';
-											audio.src = '/media/se_maoudamashii_voice_human04.wav.wav';
+											qrqr.value = '誤ったQRコードです !';
 										}
                 }
             });
@@ -117,12 +115,10 @@
                     var qr = document.getElementById('qr');
                     qr.value = res;
 										if(qr.value === 'A08030329_92515'){
-											qrqr.value = '正しいQRコードです!';
-											audio.src = '/media/se_maoudamashii_chime13.wav';
+											qrqr.value = '正しいQRコードです !';
 											location.href = 'https://protected-cove-81704.herokuapp.com/Conforming.jsp';
 										}else{
-											qrqr.value = '誤ったQRコードです!';
-											audio.src = '/media/se_maoudamashii_voice_human04.wav.wav';
+											qrqr.value = '誤ったQRコードです !';
 										}
                 }
             };
