@@ -17,9 +17,7 @@
   <body>
 		<h1>QRコード読み取りデモ</h1>
     <%
-			String jspPath = session.getServletContext().getRealPath("");
-			String txtFilePath = jspPath + "/dummy.txt";
-			BufferedReader reader = new BufferedReader(new FileReader(txtFilePath));
+			BufferedReader reader = new BufferedReader(new FileReader(application.getRealPath("dummy.txt")));
 			StringBuilder sb = new StringBuilder();
 			String line;
 
