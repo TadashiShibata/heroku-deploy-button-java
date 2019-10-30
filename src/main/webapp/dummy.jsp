@@ -17,7 +17,7 @@
   <body>
 		<h1>QRコード読み取りデモ</h1>
     <%
-			BufferedReader reader = new BufferedReader(new FileReader(application.getRealPath("dummy.txt")));
+			BufferedReader reader = new BufferedReader(new FileReader("https://theeggman20191030.s3.us-east-2.amazonaws.com/dummy.txt")));
 			StringBuilder sb = new StringBuilder();
 			String line;
 
