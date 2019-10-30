@@ -39,7 +39,7 @@
 	<script src="./js/qr/qr_packed.js" charset="UTF-8"></script>
 	<script type="text/javascript">
 		function menu(){
-		   location.href = "./MainMenu.jsp";
+		   location.href = "./dummy.jsp";
 		}
 	</script>
 </html>
