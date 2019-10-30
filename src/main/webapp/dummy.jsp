@@ -1,10 +1,10 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="Shift_JIS" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>テストタイトル</title>
+		<title>test</title>
 	</head>
 	<body>
-		テスト
+		test
 	</body>
 </html>
