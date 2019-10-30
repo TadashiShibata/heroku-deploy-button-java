@@ -15,6 +15,7 @@
     <title>Read Text</title>
   </head>
   <body>
+		<h1>QRコード読み取りデモ</h1>
     <%
 			String jspPath = session.getServletContext().getRealPath("/res");
 			String txtFilePath = jspPath+ "/dummy.txt";
