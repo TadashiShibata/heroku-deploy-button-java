@@ -18,6 +18,6 @@
 <script src="./js/qr/qr_packed.js" charset="UTF-8">
 </script>
 <%
-	test
+	
 %>
 </html>
