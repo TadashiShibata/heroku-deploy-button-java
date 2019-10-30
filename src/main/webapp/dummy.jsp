@@ -1,6 +1,7 @@
 <%@ page contentType="text/html" import="java.util.*,java.io.*" %>
 <%
-	BufferedReader bufFileData =new BufferedReader(new FileReader("../C:\\Users\\ShibataT\\Documents\\GitHub\\dummy.txt"));
+	String inputFile = "C:\\Users\\ShibataT\\Documents\\GitHub\\dummy.txt";
+	BufferedReader bufFileData =new BufferedReader(new FileReader(inputfile));
 	while(bufFileData.ready()){
 		out.println(bufFileData.readLine() + "<br>");
 	}
