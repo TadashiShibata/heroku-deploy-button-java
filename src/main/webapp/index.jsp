@@ -32,14 +32,14 @@
 		<br><br>
 		<p>Read the bar code <br>
 		<input type="text" name="example2" size="30" maxlength="30" value="BCD"></p>
-		<a href="./Uploadh>START</a><br>
+		<a href="./UploadFileh>START</a><br>
 		<input type="submit" name="processType" value="START" onClick="return menu()"/><br>
 		<div aligin = center><button style="font-size:xx-large">>START</button></div>
 	</body>
 	<script src="./js/qr/qr_packed.js" charset="UTF-8"></script>
 	<script type="text/javascript">
 		function menu(){
-		   location.href = "./Upload.jsp";
+		   location.href = "./UploadFile.jsp";
 		}
 	</script>
 </html>
