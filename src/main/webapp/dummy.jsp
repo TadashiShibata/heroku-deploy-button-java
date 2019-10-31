@@ -19,6 +19,16 @@
   <body>
 		<h1>QRコード読み取りデモ</h1>
     <%
+      File file = new File("/app/tmp\\test.txt");
+      BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+
+      bw.write("AAA ?");
+      bw.newLine();
+      bw.write("BBB !");
+      bw.newLine();
+
+      bw.close();
+
 			BufferedReader reader = new BufferedReader(new FileReader("/tmp/dummy.txt"));
 			StringBuilder sb = new StringBuilder();
 			String line;
