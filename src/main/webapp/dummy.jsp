@@ -29,7 +29,7 @@
 
       bw.close();
 
-			BufferedReader reader = new BufferedReader(new FileReader("/tmp/dummy.txt"));
+			BufferedReader reader = new BufferedReader(new FileReader("/tmp/test.txt"));
 			StringBuilder sb = new StringBuilder();
 			String line;
 
