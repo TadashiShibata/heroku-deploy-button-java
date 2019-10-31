@@ -29,14 +29,9 @@
 
 			String path = "/app/tmp";
 			File dir = new File(path);
-   		File[] files = dir.listFiles();
-   		for (int k = 0; k < files.length; k++) {
-				int irai = files.length;
-      	System.out.println(irai);
-				File file = files[k];
-        String filename = file.toString();
-				System.out.println(filename);
-			}
+			File file = dir.listFiles();
+      String filename = file.toString();
+			System.out.println(filename);
 		%>
 	</body>
 </html>
