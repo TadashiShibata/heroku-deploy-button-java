@@ -1,5 +1,4 @@
-<%@ page import = "java.io.*,java.util.*, javax.servlet.*" %>
-<%@ page import = "javax.servlet.http.*" %>
+<%@ page import = "java.io.*,java.util.*" %>
 <%
    File file ;
    int maxFileSize = 5000 * 1024;
