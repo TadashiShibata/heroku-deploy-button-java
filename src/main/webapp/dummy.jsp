@@ -21,22 +21,11 @@
     <%
       File file = new File("/app/tmp\\test.txt");
       BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-
       bw.write("AAA ?");
       bw.newLine();
       bw.write("BBB !");
       bw.newLine();
-
       bw.close();
-
-			BufferedReader reader = new BufferedReader(new FileReader("/tmp/test.txt"));
-			StringBuilder sb = new StringBuilder();
-			String line;
-
-			while((line = reader.readLine())!= null){
-				sb.append(line+"\n");
-			}
-			out.println(sb.toString());
 		%>
 	</body>
 </html>
