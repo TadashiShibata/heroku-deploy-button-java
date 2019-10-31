@@ -4,6 +4,8 @@
 <%@page import="java.net.URL"%>
 <%@page import="java.io.FileReader"%>
 <%@page import="java.io.BufferedReader"%>
+<%@page import="java.io.FileWriter"%>
+<%@page import="java.io.BufferedWriter"%>
 <!doctype html>
 <html lang="ja">
 
@@ -17,7 +19,7 @@
   <body>
 		<h1>QRコード読み取りデモ</h1>
     <%
-			BufferedReader reader = new BufferedReader(new FileReader("https://theeggman20191030.s3.us-east-2.amazonaws.com/dummy.txt"));
+			BufferedReader reader = new BufferedReader(new FileReader("/tmp/dummy.txt"));
 			StringBuilder sb = new StringBuilder();
 			String line;
 
