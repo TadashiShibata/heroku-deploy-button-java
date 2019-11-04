@@ -20,6 +20,11 @@
             <version>4.2.1</version>
         </dependency>
 				<dependency>
+  				<groupId>postgresql</groupId>
+  				<artifactId>postgresql</artifactId>
+  				<version>8.3-603.jdbc4</version>
+				</dependency>
+				<dependency>
     			<groupId>com.amazonaws</groupId>
     			<artifactId>aws-java-sdk</artifactId>
     			<version>1.11.327</version>

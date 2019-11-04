@@ -18,20 +18,13 @@
   </head>
   <body>
 		<h1>QRコード読み取りデモ</h1>
-    <%
-      File file = new File("/app/tmp\\test.txt");
-      BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-      bw.write("AAA ?");
-      bw.newLine();
-      bw.write("BBB !");
-      bw.newLine();
-      bw.close();
-
-			String path = "/app/tmp";
-			File dir = new File(path);
-			File file = dir.listFiles();
-      String filename = file.toString();
-			System.out.println(filename);
-		%>
+		<%
+			//データベースに接続
+			java.net.URI dbUri = new java.net.URI(System.getenv("DATABASE_URL"));
+			String username = dbUri.getUserInfo().split(":")[0];
+			String password = dbUri.getUserInfo().split(":")[1];
+			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + dbUri.getPath() + ":" + dbUri.getPort();
+			Connection conn = DriverManager.getConnection(dbUrl, username, password);
+		/%>
 	</body>
 </html>
