@@ -18,8 +18,8 @@
   </head>
   <body>
 		<h1>QRコード読み取りデモ</h1>
+		//データベースに接続
 		<%
-			//データベースに接続
 			java.net.URI dbUri = new java.net.URI(System.getenv("DATABASE_URL"));
 			String username = dbUri.getUserInfo().split(":")[0];
 			String password = dbUri.getUserInfo().split(":")[1];
