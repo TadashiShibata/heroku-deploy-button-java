@@ -19,16 +19,6 @@
             <artifactId>itext</artifactId>
             <version>4.2.1</version>
         </dependency>
-				<dependency>
-  				<groupId>org.postgresql</groupId>
-  				<artifactId>postgresql</artifactId>
-  				<version>postgresql-9.3-1103.jdbc3</version>
-				</dependency>
-				<dependency>
-    			<groupId>com.amazonaws</groupId>
-    			<artifactId>aws-java-sdk</artifactId>
-    			<version>1.11.327</version>
-  			</dependency>
     </dependencies>
     <build>
         <finalName>dynamicform</finalName>
